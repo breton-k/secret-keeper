@@ -1,0 +1,16 @@
+<template name="postsList">
+ 	{{#each posts}}
+	<article>
+		<div class="well" id= "postWell">
+			<p>
+				{{> postItem}}
+			</p>
+ 			<small>
+				<p>
+					{{createdAt}} | Comments ({{commentnumber}})
+				</p>
+			</small>
+		</div>
+	</article>
+	{{/each}}
+</template>
